@@ -8,14 +8,6 @@ from typing import List
 
 employee = APIRouter()
 
-
-@employee.get("/api/employees", response_model=List(EmployeeSchema))
-async def get_employees():
-   with engine.connect as conn:
-      result = conn.execute(employees.select()).fetchall()
-
-      return result
-
 @employee.get("/employees")
 async def get_users(page: int = 1, page_size: int = 10):
     offset = (page - 1) * page_size
