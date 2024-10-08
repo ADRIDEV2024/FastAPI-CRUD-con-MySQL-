@@ -45,17 +45,6 @@ async def search_by_deparment(department: str | None):
         results = [employee for employee in results if department.lower() in employee["name"].lower()]
         
 
-   
-@employee.post("/api/employees", status_code=HTTP_201_CREATED)
-async def create_employee(data_employee:EmployeeSchema):
-   with engine.connect() as conn:
-    new_employee = data_employee.dict()
-    new_employee["password"] = generate_password_hash(data_employee.password, "pbkdf2:sha256:30", 50)
-    print(data_employee)
-    conn.execute(insert().values(new_user))
-
-    return Response(status_code=HTTP_201_CREATED)
-
 @employee.post("/api/employees", status_code=HTTP_201_CREATED)
 async def create_employee(data_employee: EmployeeSchema):
     with engine.connect() as conn:
