@@ -56,6 +56,14 @@ async def create_employee(data_employee:EmployeeSchema):
 
     return Response(status_code=HTTP_201_CREATED)
 
+@employee.post("/api/employees", status_code=HTTP_201_CREATED)
+async def create_employee(data_employee: EmployeeSchema):
+    with engine.connect() as conn:
+        new_employee = data_employee.dict()
+        new_employee["password"] = generate_password_hash(data_employee.password, "pbkdf2:sha256:30", 50)
+        conn.execute(employees.insert().values(new_employee))
+    return {"message": "Employee created successfully"}
+
 
 @employee.put("/api/employees/{employee_id}")
 async def update_employee(data_update:EmployeeSchema, employee_id:str):
