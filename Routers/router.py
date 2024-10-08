@@ -15,14 +15,7 @@ async def get_employees():
       result = conn.execute(employees.select()).fetchall()
 
       return result
-   
-@employee.get("/employees")
-async def get_users(page: int = 1, page_size: int = 10):
-    start = (page - 1) * page_size
-    end = start + page_size
-    return {"employees": employees[start:end], "total": len(employees), "page": page, "page_size": page_size}
 
-   
 @employee.get("/api/employees/{employee_id}", response_model=EmployeeSchema)
 async def get_employee(employee_id:str):
    with engine.connect as conn:
