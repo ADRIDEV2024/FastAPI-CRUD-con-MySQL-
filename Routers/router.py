@@ -2,9 +2,6 @@ from fastapi import APIRouter
 from starlette.status import HTTP_201_CREATED
 from schema.employee_schema import EmployeeSchema
 from config.db import engine
-from models.employees import employees
-from werkzeug.security import generate_password_hash, check_password_hash 
-from typing import List
 
 employee = APIRouter()
 
