@@ -22,18 +22,6 @@ async def get_employees():
         result = conn.execute(employees.select()).fetchall()
         return result
 
-@employee.get("/api/employees/{employee_id}", response_model=EmployeeSchema)
-async def get_employee(employee_id:str):
-   with engine.connect as conn:
-      result = conn.execute(employees.select().where(employees.c.id == employee_id)).first()
-
-      return result
-   
-@employee.get("/employees/{employee_name}")
-async def search_employees(name: str | None):
-    results = employees
-    if name:
-        results = [employee for employee in results if name.lower() in employee["name"].lower()]
         
 @employee.get("/employees/{employee_department}")
 async def search_by_deparment(department: str | None):
