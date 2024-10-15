@@ -42,6 +42,8 @@ async def search_by_deparment(department: str | None) -> None:
     results = employees
     if department:
         results = [employee for employee in results if department.lower() in employee["name"].lower()]
+    else:
+        print("The department you´re looking for doesn´t exists in the database")
         
 
 @employee.post("/api/employees", status_code=HTTP_201_CREATED)
