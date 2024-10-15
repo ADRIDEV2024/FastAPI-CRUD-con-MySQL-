@@ -6,7 +6,7 @@ from models.employees import employees
 from werkzeug.security import generate_password_hash, check_password_hash 
 from typing import List
 
-employee = APIRouter()
+employee = APIRouter("/")
 
 @employee.get("/employees")
 async def get_users(page: int = 1, page_size: int = 10):
