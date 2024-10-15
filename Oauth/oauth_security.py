@@ -31,7 +31,7 @@ employees_db = {
 }
 
 # Password hashing
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_context = CryptContext(schemes=["pkbdf2"], deprecated="auto")
 
 class Token(BaseModel):
     access_token: str
