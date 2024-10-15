@@ -17,13 +17,13 @@ async def get_users(page: int = 1, page_size: int = 20):
     return {"employees": result, "total": total, "page": page, "page_size": page_size}
 
 @employee.get("/api/employees", response_model=List[EmployeeSchema], summary="Get employees", description="Retrieve a list of all employees.")
-async def get_employees():
+async def get_employees(employees):
     with engine.connect() as conn:
         result = conn.execute(employees.select()).fetchall()
         return result
 
 @employee.get("/api/employees/{employee_id}", response_model=EmployeeSchema)
-async def get_employee(employee_id:str):
+async def get_employee(employee_id:str) -> str:
    with engine.connect as conn:
       result = conn.execute(employees.select().where(employees.c.id == employee_id)).first()
 
