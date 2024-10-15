@@ -9,7 +9,7 @@ from typing import List
 employee = APIRouter()
 
 @employee.get("/employees")
-async def get_users(page: int = 1, page_size: int = 20):
+async def get_users(page: int = 1, page_size: int = 20) -> dict[]:
     offset = (page - 1) * page_size
     with engine.connect() as conn:
         result = conn.execute(employees.select().offset(offset).limit(page_size)).fetchall()
