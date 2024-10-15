@@ -16,7 +16,7 @@ async def get_users(page: int = 1, page_size: int = 20):
         total = conn.execute(employees.count()).scalar()
     return {"employees": result, "total": total, "page": page, "page_size": page_size}
 
-@employee.get("/api/employees", response_model=List[EmployeeSchema], summary="Get all employees", description="Retrieve a list of all employees.")
+@employee.get("/api/employees", response_model=List[EmployeeSchema], summary="Get employees", description="Retrieve a list of all employees.")
 async def get_employees():
     with engine.connect() as conn:
         result = conn.execute(employees.select()).fetchall()
