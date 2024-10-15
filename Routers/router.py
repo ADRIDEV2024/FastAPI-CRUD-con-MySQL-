@@ -34,6 +34,8 @@ async def search_employees(name: str | None) -> None:
     results = employees
     if name:
         results = [employee for employee in results if name.lower() in employee["name"].lower()]
+    else:
+        print("The employee you´re looking for doesn´t exists in the database")
         
 @employee.get("/employees/{employee_department}")
 async def search_by_deparment(department: str | None) -> None:
