@@ -9,7 +9,7 @@ from typing import List
 employee = APIRouter()
 
 @employee.get("/employees")
-async def get_users(page: int = 1, page_size: int = 20) -> dict[]:
+async def get_users(page: int = 1, page_size: int = 20) -> dict[str]:
     offset = (page - 1) * page_size
     with engine.connect() as conn:
         result = conn.execute(employees.select().offset(offset).limit(page_size)).fetchall()
@@ -30,13 +30,13 @@ async def get_employee(employee_id:str) -> str:
       return result
    
 @employee.get("/employees/{employee_name}")
-async def search_employees(name: str | None):
+async def search_employees(name: str | None) -> None:
     results = employees
     if name:
         results = [employee for employee in results if name.lower() in employee["name"].lower()]
         
 @employee.get("/employees/{employee_department}")
-async def search_by_deparment(department: str | None):
+async def search_by_deparment(department: str | None) -> None:
     results = employees
     if department:
         results = [employee for employee in results if department.lower() in employee["name"].lower()]
