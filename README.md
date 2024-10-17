@@ -1,4 +1,4 @@
-# FastAPI-CRUD-con-MySQL-
+# FastAPI CRUD con MySQL- EmployIT Db API
 
 ![CRUD](https://github.com/user-attachments/assets/f78c8881-7bff-4ce6-8be0-c7c5f72c1cd4)
 
