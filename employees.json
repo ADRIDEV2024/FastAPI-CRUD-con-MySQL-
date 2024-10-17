@@ -2,183 +2,184 @@
  15 employees only for my learning porpouses ###
 
 
-
-{
-    "id": "1",
-    "name": "Africa",
-    "password": "4567?",
-    "age": "45",
-    "department": "Sales",
-    "position": ""  ,
-    "years_worked": "2 years",
-    "salary_month": "2400$"
-}
-
-
-{
-    "id": "2",
-    "name": "Erick",
-    "password": "22448",
-    "age": "33",
-    "department": "Finances",
-    "position": ""  ,
-    "years_worked": "4 years",
-    "salary_month": "3500$"
-}
-
-
-{
-    "id": "3",
-    "name": "Anne",
-    "password": "1234¿",
-    "age": "37",
-    "department": "Commercial",
-    "position": ""  ,
-    "years_worked": " 3 years",
-    "salary_month": "1900$"
-}
-
-
-{
-    "id": "4",
-    "name": "Peter",
-    "password": "455119?",
-    "age": "40",
-    "department": "Sales",
-    "position": ""  ,
-    "years_worked": "2 years",
-    "salary_month": "2300$"
-}
-
-
-{
-    "id": "5",
-    "name": "Jack",
-    "password": "2468?",
-    "age": "28",
-    "department": "HR",
-    "position": ""  ,
-    "years_worked": "1 year",
-    "salary_month": "1900$"
-}
-
-
-{
-    "id": "6",
-    "name": "Karen",
-    "password": "771NB5H",
-    "age": "55",
-    "department": "Administration",
-    "position": ""  ,
-    "years_worked": "5 years",
-    "salary_month": "2800$"
-}
-{
-    "id": "7",
-    "name": "Fran",
-    "password": "249EJ8L?",
-    "age": "31",
-    "department": "Sales",
-    "position": ""  ,
-    "years_worked": "1 year",
-    "salary_month": "1900$"
-}
-
-
-{
-    "id": "8",
-    "name": "Dan",
-    "password": "5173NB5M",
-    "age": "33",
-    "department": "Commercial",
-    "position": ""  ,
-    "years_worked": "2 years",
-    "salary_month": "1800$"
-}
-
-
-{
-    "id": "9",
-    "name": "James",
-    "password": "132132?",
-    "age": "45",
-    "department": "Administration",
-    "position": ""  ,
-    "years_worked": "6 years",
-    "salary_month": "2500$"
-}
-
-
-{
-    "id": "10",
-    "name": "Lisa",
-    "password": "9876789_N",
-    "age": "35",
-    "department": "HR",
-    "position": ""  ,
-    "years_worked": "4 years",
-    "salary_month": "3100$"
-}
-
-
-{
-    "id": "11",
-    "name": "Joel",
-    "password": "14434_",
-    "age": "31",
-    "department": "Marketing",
-    "position": ""  ,
-    "years_worked": " 5 years",
-    "salary_month": "2200$"
-}
-
-
-{
-    "id": "12",
-    "name": "Samara",
-    "password": "0337B11?_",
-    "age": "40",
-    "department": "Marketing",
-    "position": ""  ,
-    "years_worked": "2 years",
-    "salary_month": "2450$"
-}
-
-
-{
-    "id": "13",
-    "name": "Antonio",
-    "password": "1369136_",
-    "age": "26",
-    "department": "",
-    "position": ""  ,
-    "years_worked": "1 year",
-    "salary_month": "1900$"
-}
-
-
-{
-    "id": "14",
-    "name": "Roberto",
-    "password": "771NB5H",
-    "age": "55",
-    "department": "Administration",
-    "position": ""  ,
-    "years_worked": "5 years",
-    "salary_month": "2800$"
-}
-
-{
-    "id": "15",
-    "name": "Fran",
-    "password": "249EJ8L?",
-    "age": "31",
-    "department": "Sales",
-    "position": ""  ,
-    "years_worked": "1 year",
-    "salary_month": "1900$"
-}
-
+EmployIT DB CONTENT: [
+                        {
+                            "id": "1",
+                            "name": "Africa",
+                            "password": "4567?",
+                            "age": "45",
+                            "department": "Sales",
+                            "position": ""  ,
+                            "years_worked": "2 years",
+                            "salary_month": "2400$"
+                        },
+                        
+                        
+                        {
+                            "id": "2",
+                            "name": "Erick",
+                            "password": "22448",
+                            "age": "33",
+                            "department": "Finances",
+                            "position": ""  ,
+                            "years_worked": "4 years",
+                            "salary_month": "3500$"
+                        },
+                        
+                        
+                        {
+                            "id": "3",
+                            "name": "Anne",
+                            "password": "1234¿",
+                            "age": "37",
+                            "department": "Commercial",
+                            "position": ""  ,
+                            "years_worked": " 3 years",
+                            "salary_month": "1900$"
+                        },
+                        
+                        
+                        {
+                            "id": "4",
+                            "name": "Peter",
+                            "password": "455119?",
+                            "age": "40",
+                            "department": "Sales",
+                            "position": ""  ,
+                            "years_worked": "2 years",
+                            "salary_month": "2300$"
+                        },
+                        
+                        
+                        {
+                            "id": "5",
+                            "name": "Jack",
+                            "password": "2468?",
+                            "age": "28",
+                            "department": "HR",
+                            "position": ""  ,
+                            "years_worked": "1 year",
+                            "salary_month": "1900$"
+                        },
+                        
+                        
+                        {
+                            "id": "6",
+                            "name": "Karen",
+                            "password": "771NB5H",
+                            "age": "55",
+                            "department": "Administration",
+                            "position": ""  ,
+                            "years_worked": "5 years",
+                            "salary_month": "2800$"
+                        },
+                         
+                        {
+                            "id": "7",
+                            "name": "Fran",
+                            "password": "249EJ8L?",
+                            "age": "31",
+                            "department": "Sales",
+                            "position": ""  ,
+                            "years_worked": "1 year",
+                            "salary_month": "1900$"
+                        },
+                        
+                        
+                        {
+                            "id": "8",
+                            "name": "Dan",
+                            "password": "5173NB5M",
+                            "age": "33",
+                            "department": "Commercial",
+                            "position": ""  ,
+                            "years_worked": "2 years",
+                            "salary_month": "1800$"
+                        },
+                        
+                        
+                        {
+                            "id": "9",
+                            "name": "James",
+                            "password": "132132?",
+                            "age": "45",
+                            "department": "Administration",
+                            "position": ""  ,
+                            "years_worked": "6 years",
+                            "salary_month": "2500$"
+                        },
+                        
+                        
+                        {
+                            "id": "10",
+                            "name": "Lisa",
+                            "password": "9876789_N",
+                            "age": "35",
+                            "department": "HR",
+                            "position": ""  ,
+                            "years_worked": "4 years",
+                            "salary_month": "3100$"
+                        },
+                        
+                        
+                        {
+                            "id": "11",
+                            "name": "Joel",
+                            "password": "14434_",
+                            "age": "31",
+                            "department": "Marketing",
+                            "position": ""  ,
+                            "years_worked": " 5 years",
+                            "salary_month": "2200$"
+                        },
+                        
+                        
+                        {
+                            "id": "12",
+                            "name": "Samara",
+                            "password": "0337B11?_",
+                            "age": "40",
+                            "department": "Marketing",
+                            "position": ""  ,
+                            "years_worked": "2 years",
+                            "salary_month": "2450$"
+                        },
+                        
+                        
+                        {
+                            "id": "13",
+                            "name": "Antonio",
+                            "password": "1369136_",
+                            "age": "26",
+                            "department": "",
+                            "position": ""  ,
+                            "years_worked": "1 year",
+                            "salary_month": "1900$"
+                        },
+                        
+                        
+                        {
+                            "id": "14",
+                            "name": "Roberto",
+                            "password": "771NB5H",
+                            "age": "55",
+                            "department": "Administration",
+                            "position": ""  ,
+                            "years_worked": "5 years",
+                            "salary_month": "2800$"
+                        },
+                        
+                        {
+                            "id": "15",
+                            "name": "Fran",
+                            "password": "249EJ8L?",
+                            "age": "31",
+                            "department": "Sales",
+                            "position": ""  ,
+                            "years_worked": "1 year",
+                            "salary_month": "1900$"
+                        }
+ ]
 
 # Responses for GET/employees/employee_name requests
 employee_name:[
