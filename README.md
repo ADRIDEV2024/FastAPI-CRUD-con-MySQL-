@@ -8,3 +8,4 @@ This personal project deals with a CRUD system using the FastAPI framework with 
 
 
 VISITA YA LA WEB ➡ [![EmployIT](https://emplyIT.com)](https://emplyIT.com))
+![WEB](https://github.com/user-attachments/assets/da923725-2707-43cb-8444-c81abf38f42b)
