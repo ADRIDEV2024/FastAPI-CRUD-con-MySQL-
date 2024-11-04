@@ -7,5 +7,5 @@ Este proyecto personal trata de un sistema CRUD utilizando el framework FastAPI 
 This personal project deals with a CRUD system using the FastAPI framework with a connection to a MySQL database containing key information about fictitious employees of a software development company called ViTech where the database administrator has full access to the employee table to perform the basic operations of creating, reading, updating and deleting data. Among the different fields we can find some such as Name, Age, Department or Position, as well as others that are of interest to the company.
 
 
-VISITA YA LA WEB ➡ [![EmployIT](https://emplyIT.com)](https://emplyIT.com))
+VISITA YA LA WEB ➡ [[](https://emplyIT.com)](https://emplyIT.com))
 ![WEB](https://github.com/user-attachments/assets/da923725-2707-43cb-8444-c81abf38f42b)
