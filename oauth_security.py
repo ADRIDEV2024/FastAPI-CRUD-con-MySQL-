@@ -1,7 +1,9 @@
 from datetime import datetime, timedelta
 from typing import Optional
 from configs import MY_SECRET_KEY
-
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
