@@ -30,9 +30,6 @@ employees_db = {
     }
 }
 
-
-
-
 # Password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
