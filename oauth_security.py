@@ -10,14 +10,13 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 
 SECRET_KEY = MY_SECRET_KEY
-ALGORITHM = "HS256"
+ALGORITHM = "HS512"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
 app = FastAPI()
-
 
 # Example key-value data for a simulated database table content
 employees_db = {
