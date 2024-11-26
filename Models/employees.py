@@ -2,6 +2,8 @@ from sqlalchemy import Table, Column
 from sqlalchemy.sql.sqltypes import Integer, String
 from config.db import metadata, engine
 
+
+
 employees_employit = Table("Employees", metadata,
             Column("Id", Integer, primary_key=True),
             Column("Name", String(200), nullable=False),
