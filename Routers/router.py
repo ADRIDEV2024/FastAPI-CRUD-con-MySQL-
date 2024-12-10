@@ -55,5 +55,16 @@ async def create_employee(data_employee: EmployeeSchema):
     return {"message": "Employee created successfully"}
 
 
+@employee.put("/api/employees/{employee_id}")
+async def update_employee(data_update:EmployeeSchema, employee_id:str) -> str:
+    encrypt_passw = generate_password_hash(data_update.password, "pbkdf2:sha256:30", 50)
+    with engine.connect as conn:
+         conn.execute(employees.update().values(name=data_update.name, salary=data_update.salary_month, password=encrypt_passw
+         ).where(employees.c.id == employee_id))
+
+         result = conn.execute(employees.select().where(employees.c.id == employee_id)).first()
+
+         return result
+                            
 
 
