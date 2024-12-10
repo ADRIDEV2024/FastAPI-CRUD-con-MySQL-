@@ -30,7 +30,7 @@ employees_db = {
     }
 }
 
-# Password hashing
+
 pwd_context = CryptContext(schemes=["pkbdf2"], deprecated=False)
 
 class Token(BaseModel):
