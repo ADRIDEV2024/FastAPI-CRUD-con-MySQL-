@@ -68,7 +68,15 @@ def authenticate_employee(db, username: str, password: str):
         return False    
     return employee
 
-
+def create_access_token(data:dict, expires_delta: Optional[timedelta] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.now() + expires_delta
+    else:
+        expire = datetime.now() + timedelta(minutes=10)
+    to_encode.update = ({"expire": expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
 
 async def get_current_employee(token: str = Depends(oauth2_scheme)):
     credentials_exception = HTTPException(
