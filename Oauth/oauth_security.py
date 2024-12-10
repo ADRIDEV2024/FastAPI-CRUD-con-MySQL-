@@ -91,7 +91,7 @@ async def get_current_employee(token: str = Depends(oauth2_scheme)):
             raise credentials_exception
         token_data = TokenData(username=username)
 
-    except Exception:
+    except JWTERROR:
         raise credentials_exception
     
     employee = get_employee(employees_db, username=token_data.username)
