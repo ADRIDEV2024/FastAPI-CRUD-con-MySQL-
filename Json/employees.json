@@ -20,7 +20,7 @@
     "password": "22448",
     "age": "33",
     "department": "Finances",
-    "position": "Intern"  ,
+    "position": ""  ,
     "years_worked": "4 years",
     "salary_month": "3500$"
 }
@@ -34,7 +34,7 @@
     "department": "Commercial",
     "position": ""  ,
     "years_worked": " 3 years",
-    "salary_month": "1900$"
+    "salary_month": "2200$"
 }
 
 
